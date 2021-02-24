@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env: 
       TRUFFLERUBYOPT: '--vm.Xmx16G --vm.Xmn4G'
+      MT_CPU: 1
     strategy:
       fail-fast: false
       matrix:
