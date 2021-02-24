@@ -10,7 +10,8 @@ jobs:
   test:
 
     runs-on: ubuntu-latest
-
+    env: 
+      TRUFFLERUBYOPT: '--vm.Xmx16G --vm.Xmn4G'
     strategy:
       fail-fast: false
       matrix:
